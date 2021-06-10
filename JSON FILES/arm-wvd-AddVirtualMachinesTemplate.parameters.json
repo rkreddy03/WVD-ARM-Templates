@@ -1,0 +1,141 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "nestedTemplatesLocation": {
+      "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/nestedtemplates/"
+    },
+    "artifactsLocation": {
+      "value": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
+    },
+    "hostpoolName": {
+      "value": "HP-win10SMSpooltest"
+    },
+    "hostpoolToken": {
+      "value": "2021-05-27T00:00:00"
+    },
+    "hostpoolResourceGroup": {
+      "value": null
+    },
+    "hostpoolLocation": {
+      "value": "southcentralus"
+    },
+    "hostpoolProperties": {
+      "value": {}
+    },
+    "vmTemplate": {
+      "value": null
+    },
+    "administratorAccountUsername": {
+      "value": "Wvdadmin"
+    },
+    "administratorAccountPassword": {
+      "value": "Wipro@123456"
+    },
+    "createAvailabilitySet": {
+      "value": null
+    },
+    "vmResourceGroup": {
+      "value": "rg-wiprowvd-nonprod-001"
+    },
+    "vmLocation": {
+      "value": "southcentralus"
+    },
+    "vmSize": {
+      "value": "Standard_D2s_v3"
+    },
+    "vmInitialNumber": {
+      "value": null
+    },
+    "vmNumberOfInstances": {
+      "value": 2
+    },
+    "vmNamePrefix": {
+      "value": "vmwvd-test1"
+    },
+    "vmImageType": {
+      "value": "Gallery"
+    },
+    "vmGalleryImageOffer": {
+      "value": "office-365"
+    },
+    "vmGalleryImagePublisher": {
+      "value": "MicrosoftWindowsDesktop"
+    },
+    "vmGalleryImageSKU": {
+      "value": "20h2-evd-o365pp"
+    },
+    "vmImageVhdUri": {
+      "value": null
+    },
+    "vmCustomImageSourceId": {
+      "value": null
+    },
+    "vmDiskType": {
+      "value": "Standard_LRS"
+    },
+    "vmUseManagedDisks": {
+      "value": true
+    },
+    "storageAccountResourceGroupName": {
+      "value": null
+    },
+    "existingVnetName": {
+      "value": "vnet-wvd-scus-001"
+    },
+    "existingSubnetName": {
+      "value": "snet-wvd-scus-001"
+    },
+    "virtualNetworkResourceGroupName": {
+      "value": "rg-wiprowvd-001"
+    },
+    "usePublicIP": {
+      "value": null
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "createNetworkSecurityGroup": {
+      "value": null
+    },
+    "networkSecurityGroupId": {
+      "value": null
+    },
+    "networkSecurityGroupRules": {
+      "value": []
+    },
+    "availabilitySetTags": {
+      "value": {}
+    },
+    "networkInterfaceTags": {
+      "value": {}
+    },
+    "networkSecurityGroupTags": {
+      "value": {}
+    },
+    "publicIPAddressTags": {
+      "value": {}
+    },
+    "virtualMachineTags": {
+      "value": {}
+    },
+    "imageTags": {
+      "value": {}
+    },
+    "deploymentId": {
+      "value": "b955820c-b177-4c40-8d97-5ce425529027"
+    },
+    "apiVersion": {
+      "value": "2019-12-10-preview"
+    },
+    "ouPath": {
+      "value": "OU=Active,OU=Enterprise - WiPro VDI,DC=WILLIAMS,DC=com"
+    },
+    "domain": {
+      "value": "Williams.com"
+    }
+  }
+}
