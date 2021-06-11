@@ -120,7 +120,8 @@
                 "CustomVHD",
                 "CustomImage",
                 "Gallery",
-                "Disk"
+                "Disk",
+                "SharedImageGallery"
             ]
         },
         "vmGalleryImageOffer": {
@@ -144,6 +145,34 @@
             },
             "defaultValue": ""
         },
+        "SharedImageGalleryResourceGroup": {
+			"type": "string",
+			"metadata": {
+				"description": "(Required when rdshImageSrouce = SharedImageGallery) ResourceGroup name of the Shared Image Gallery"
+			},
+			"defaultValue": ""
+		},
+		"SharedImageGalleryName": {
+			"type": "string",
+			"metadata": {
+				"description": "(Required when rdshImageSrouce = SharedImageGallery) Name of the Shared Image Gallery."
+			},
+			"defaultValue": ""
+		},
+		"SharedImageGalleryDefinitionName": {
+			"type": "string",
+			"metadata": {
+				"description": "(Required when rdshImageSrouce = SharedImageGallery) Name of the Image Definition."
+			},
+			"defaultValue": ""
+		},
+		"SharedImageGalleryVersionName": {
+			"type": "string",
+			"metadata": {
+				"description": "(Required when rdshImageSrouce = SharedImageGallery) Name of the Image Version - should follow <MajorVersion>.<MinorVersion>.<Patch>."
+			},
+			"defaultValue": ""
+		},
         "vmImageVhdUri": {
             "type": "string",
             "metadata": {
@@ -461,6 +490,18 @@
                     "vhds": {
                         "value": "[variables('vhds')]"
                     },
+                    "SharedImageGalleryResourceGroup": {
+						"value": "[parameters('SharedImageGalleryResourceGroup')]"
+					},
+					"SharedImageGalleryName": {
+						"value": "[parameters('SharedImageGalleryName')]"
+					},
+					"SharedImageGalleryDefinitionName":{
+						"value": "[parameters('SharedImageGalleryDefinitionName')]"
+					},
+					"SharedImageGalleryVersionName":{
+						"value": "[parameters('SharedImageGalleryVersionName')]"
+					},
                     "rdshImageSourceId": {
                         "value": "[parameters('vmCustomImageSourceId')]"
                     },
