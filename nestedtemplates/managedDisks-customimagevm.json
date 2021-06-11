@@ -356,7 +356,7 @@
             }
           },
           "imageReference": {
-            "id": "[parameters('rdshImageSourceId')]"
+            "id": "/subscriptions/b5eed815-e1e5-4430-a28a-dc1cdf6c8b85/resourceGroups/rg-wiprowvd-nonprod-001/providers/Microsoft.Compute/images/imageihp1-20210525"
           }
         },
         "networkProfile": {
