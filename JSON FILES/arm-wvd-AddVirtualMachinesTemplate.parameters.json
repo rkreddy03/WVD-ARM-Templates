@@ -71,6 +71,18 @@
     "vmCustomImageSourceId": {
       "value": null
     },
+    "SharedImageGalleryResourceGroup": {
+			"value": ""
+		},
+		"SharedImageGalleryName": {
+			"value": ""
+		},
+		"SharedImageGalleryDefinitionName": {
+			"value": ""
+		},
+		"SharedImageGalleryVersionName": {
+			"value": ""
+    },  
     "vmDiskType": {
       "value": "Standard_LRS"
     },
