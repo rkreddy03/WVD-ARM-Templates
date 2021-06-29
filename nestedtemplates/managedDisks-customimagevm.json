@@ -356,7 +356,7 @@
             }
           },
           "imageReference": {
-            "id": "/subscriptions/b5eed815-e1e5-4430-a28a-dc1cdf6c8b85/resourceGroups/rg-wiprowvd-prod-001/providers/Microsoft.Compute/images/image-wvd-prod-004-270621"
+            "id": "/subscriptions/b5eed815-e1e5-4430-a28a-dc1cdf6c8b85/resourceGroups/rg-wiprowvd-prod-001/providers/Microsoft.Compute/images/image-wvd-prod-003-270621"
           }
         },
         "networkProfile": {
